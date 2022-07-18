@@ -72,7 +72,7 @@ proxy:
 #       Circle-Token: f95e55540321af6770472e8a5853e631d9c4c1e5
       
   '/jira/api':
-    target: https://saks.atlassian.net/jira/software/c/projects/CXDO/boards/68
+    target: https://saks.atlassian.net
     headers:
       Authorization: 'Basic c2hpa2hhLnJhbmlAc2Frcy5jb206OXVHQkJvaVZpWnZjTGVLNlFpam01MEZD'
       Accept: 'application/json'
