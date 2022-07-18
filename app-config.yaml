@@ -71,7 +71,7 @@ proxy:
     target: https://saks.atlassian.net/jira/software/c/projects/CXDO/boards/68
     headers:
       Authorization:
-        JIRA_TOKEN: 'Basic c2hpa2hhLnJhbmlAc2Frcy5jb206OXVHQkJvaVZpWnZjTGVLNlFpam01MEZD'
+        $env: JIRA_TOKEN
       Accept: 'application/json'
       Content-Type: 'application/json'
       X-Atlassian-Token: 'nocheck'
