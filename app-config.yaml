@@ -22,13 +22,13 @@ backend:
     # not just the baseUrl hostname.
     # host: 0.0.0.0
   csp:
-    #connect-src: ["'self'", 'http:', 'https:']
+    connect-src: ["'self'", 'http:', 'https:']
     # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
     # Default Helmet Content-Security-Policy values can be removed by setting the key to false
-    img-src:
-      - "'self'"
-      - 'data:'
-      - 'https://saks.atlassian.net'
+#     img-src:
+#       - "'self'"
+#       - 'data:'
+#       - 'https://backstage-integration.atlassian.net'
   cors:
     origin: http://localhost:3000
     methods: [GET, POST, PUT, DELETE]
@@ -72,9 +72,9 @@ proxy:
 #       Circle-Token: f95e55540321af6770472e8a5853e631d9c4c1e5
       
   '/jira/api':
-    target: https://saks.atlassian.net
+    target: https://backstage-integration.atlassian.net
     headers:
-      Authorization: 'Basic c2hpa2hhLnJhbmlAc2Frcy5jb206OXVHQkJvaVZpWnZjTGVLNlFpam01MEZD'
+      Authorization: 'Basic ZW1haWwyc2hpa2hhcmFuaUBnbWFpbC5jb206QmFzSlZpRTBEOHVqaHpnakhGYjYwNzc5'
       Accept: 'application/json'
       Content-Type: 'application/json'
       X-Atlassian-Token: 'nocheck'
