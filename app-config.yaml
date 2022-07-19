@@ -72,7 +72,7 @@ proxy:
 #       Circle-Token: f95e55540321af6770472e8a5853e631d9c4c1e5
       
   '/jira/api':
-    target: https://backstage-integration.atlassian.net
+    target: 'https://backstage-integration.atlassian.net'
     headers:
 #       Authorization: 'Basic ZW1haWwyc2hpa2hhcmFuaUBnbWFpbC5jb206QmFzSlZpRTBEOHVqaHpnakhGYjYwNzc5'
       Accept: 'application/json'
