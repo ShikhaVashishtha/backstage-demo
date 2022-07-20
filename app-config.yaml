@@ -61,22 +61,19 @@ integrations:
       #   apiBaseUrl: https://ghe.example.net/api/v3
       #   token: ${GHE_TOKEN}
 
-proxy:
-  # '/test':
-  #   target: 'https://example.com'
-  #   changeOrigin: true
-
-#   '/circleci/api':
-#     target: https://circleci.com/api/v1.1
-#     headers:
-#       Circle-Token: f95e55540321af6770472e8a5853e631d9c4c1e5
-      
-  '/jira/api':
-    target: 'https://backstage-integration.atlassian.net'
+proxy:      
+  /jira/api:
+    target: https://backstage-integration.atlassian.net
     headers:
-#       Authorization: 'Basic ZW1haWwyc2hpa2hhcmFuaUBnbWFpbC5jb206QmFzSlZpRTBEOHVqaHpnakhGYjYwNzc5'
+      Authorization: 'Basic ZW1haWwyc2hpa2hhcmFuaUBnbWFpbC5jb206QmFzSlZpRTBEOHVqaHpnakhGYjYwNzc5'
       Accept: 'application/json'
       Content-Type: 'application/json'
+      Connection: 'keep-alive'
+      Accept-Encoding: 'gzip, deflate, br'
+      User-Agent: '"test"'
+      Cookie: 'Cookie_1=value; atlassian.xsrf.token=5416a415-1aa4-4d9d-a239-1c4cad92ca84_8619a25788409fd3ff8c55ac699598e8471345b8_lin'
+      
+      
 #       X-Atlassian-Token: 'nocheck'
 #       User-Agent: "test"
 
