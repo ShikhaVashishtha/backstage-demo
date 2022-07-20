@@ -58,9 +58,9 @@ integrations:
       #   token: ${GHE_TOKEN}
 
 proxy:
-  '/test':
-    target: 'https://example.com'
-    changeOrigin: true
+#   '/test':
+#     target: 'https://example.com'
+#     changeOrigin: true
   '/circleci/api':
     target: https://circleci.com/api/v1.1
     headers:
